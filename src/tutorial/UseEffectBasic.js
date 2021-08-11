@@ -3,10 +3,12 @@ import React ,{useState,useEffect}from 'react'
 function UseEffectBasic() {
     const [value,setValue]=useState(0);
     useEffect(()=>{
+      
         console.log("user effect");
-        document.title='New Messages(${value})';
-
-    });
+        if(value>=1){//outside useeffect we cannot used conditional statement
+        document.title=`New Messages(${value})`;
+        }
+    },[value]);
     console.log("render component");
     return (
         <>
