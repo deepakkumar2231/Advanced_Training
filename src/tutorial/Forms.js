@@ -13,6 +13,8 @@ function Forms() {
         if(firstName && email)
         {
             console.log("submit the value");
+            const people={id:new Date().getTime().toString(),firstName,email};
+            console.log(people);
             const person={firstName,email}
             setPeople((people)=>{
                 return [...people,person];
@@ -39,6 +41,18 @@ function Forms() {
               </div>
               <button type="submit">Submit</button>
           </form>
+          
+          {
+              people.map((person,index)=>{
+                  const {id,firstName,email}=person;
+                  return(
+                      <div className='item' key={'id'}>
+                          <h4>{firstName}</h4>
+                          <p>{email}</p>
+                      </div>
+                  )
+              })
+          }
       </article>
       </>
     )
