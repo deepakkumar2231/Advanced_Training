@@ -7,7 +7,9 @@ import UseStateArray from './tutorial/UseStateArray';
 import UseStateObject from './tutorial/UseStateObject';
 import UseStateCounter from './tutorial/UseStateCounter';
 import  UseEffectBasic from './tutorial/UseEffectBasic';
+import LearnJSON from './tutorial/LearnJSON';
 import Forms from './tutorial/Forms';
+import Index from './tutorial/Reducer/Index';
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
      
      {/*<UseStateCounter></UseStateCounter>*/}
     {/* <UseEffectBasic></UseEffectBasic>*/}
-    <Forms></Forms>
+    {/*<LearnJSON></LearnJSON>*/}
+    {/*<Forms></Forms>*/}
+    <Index></Index>
     </div>
   );
 }
