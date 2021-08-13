@@ -10,17 +10,14 @@ import  UseEffectBasic from './tutorial/UseEffectBasic';
 import LearnJSON from './tutorial/LearnJSON';
 import Forms from './tutorial/Forms';
 import Index from './tutorial/Reducer/Index';
+import ReactRouterDom from './tutorial/React-Router/ReactRouterDom';
 
 function App() {
   return (
     <div className="container">
       <h2>Advance React js</h2>
      
-     {/*<UseStateCounter></UseStateCounter>*/}
-    {/* <UseEffectBasic></UseEffectBasic>*/}
-    {/*<LearnJSON></LearnJSON>*/}
-    {/*<Forms></Forms>*/}
-    <Index></Index>
+   <ReactRouterDom></ReactRouterDom>
     </div>
   );
 }
