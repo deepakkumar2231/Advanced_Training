@@ -1,4 +1,5 @@
 import React,{useState } from 'react'
+import { Link } from 'react-router-dom';
 import {data} from'../data'
 
 
@@ -8,12 +9,12 @@ function People() {
       <>
       <h1>people page</h1>
       {
-          people.map((i)=>{//i is just parameter
+          people.map((person)=>{//i is just parameter
               return(
-                  <div key={i.id} className='item'>
-                      <h4>{i.name}</h4>
-
-                  </div>
+                  <div key={person.id} className='item'>
+                      <h4>{person.name}</h4>
+                      <Link to={'/person/${person.id}'}>Learn more</Link>
+                       </div>
 
               )
               
